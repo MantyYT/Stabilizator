@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andeli Market</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <div class="logo-container">
+      <img src="./logo.jpg" alt="" class="logo" />
+    </div>
+    <div class="menu">
+      <ul class="katalog">
+        <li>
+          <i class="fa-regular fa-address-book"></i>
+          <a href="appp.html">Кантакты</a>
+
+
+        </li>
+        <li>
+          <a href="#stabil-section" class="go-to-stabil">Стабилизаторы</a>
+
+        </li>
+        <li>
+          <i class="fa-solid fa-house-user"></i>
+          <a href="">Главная страница</a>
+        </li>
+
+
+        <li>
+          <i class="fa-regular fa-bookmark"></i>
+          <a href="favorites.html">Избранное</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="search-bar">
+
+      <input type="text" class="inputSearch" placeholder="Найти...  " /> <i class="fa-solid fa-magnifying-glass"></i>
+
+
+      <!-- <button>Search</button> -->
+    </div>
+
+  </header>
+  <section class="promo-banner">
+    <div class="promo-left">
+      <h1>Andeli stabilizatorlari<br>Rasmiy diler ✓</h1>
+      <p>— 1 yillik rasmiy sifat kafolati,<br>bozordagi eng yaxshi narx!</p>
+      <div class="promo-buttons">
+        <button onclick="alert('Заказ!')">Заказать</button>
+        <button onclick="document.querySelector('#stabil-section').scrollIntoView({behavior:'smooth'})">
+          Перейти в каталов →
+        </button>
+      </div>
+    </div>
+    <div class="slider">
+
+      <img src="./banner 3.png" alt="Баннер" class="static-banner">
+
+    </div>
+
+
+
+  </section>
+
+  <main>
+
+    <section class="brand-tabs">
+      <button class="active">Stabil</button>
+      <button>Andeli</button>
+    </section>
+
+    <section class="product-grid" id="stabil-section">
+      <!-- Примеры товаров Stabil -->
+      <div class="product-card">
+        <img src="./1 stabil.PNG" alt="Stabil Product" />
+        <p>Model: TMP90 20-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>250 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./2 stabil..PNG" alt="Stabil Product" />
+        <p>Model: TMP90 15-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>200 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./3 stabil..PNG" alt="Stabil Product" />
+        <p>Model: TMP90 10-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>175 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./4 stabil..PNG" alt="Stabil Product" />
+        <p>Model: TMP90 3-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>75 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./5 stabil..PNG" alt="Stabil Product" />
+        <p>Model: DVR 2-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+
+        <span>45 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./6 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M 30-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>570 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./7 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M 20-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>470 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./8 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M-15 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>230 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./9 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M 7.5-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>150 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./10 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M 5-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>125 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./11 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M 3-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>80 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./13 stabil..PNG" alt="Stabil Product" />
+        <p>Model: SVC-M 1-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>45 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./14stabil..PNG" alt="Stabil Product" />
+        <p>Model: TMP45 30-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>450 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./15 stabil..PNG" alt="Stabil Product" />
+        <p>Model: TMP90 30-KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>380 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./16 stabil..PNG" alt="Stabil Product" />
+        <p>Model TMP45 25 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>280 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 27.PNG" alt="Andeli Product" />
+        <p>Stabil 5000W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 26.PNG" alt="Andeli Product" />
+        <p>Stabil TMP90 2000VA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 25.PNG" alt="Andeli Product" />
+        <p>Stabil TMP90 5 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>0 USD</span>
+      </div>
+
+      <div class="product-card">
+        <img src="./andeli 24.PNG" alt="Andeli Product" />
+        <p>Stabil 4000W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>0 USD</span>
+      </div>
+      <!-- Добавь больше по аналогии -->
+    </section>
+
+    <section class="product-grid hidden" id="andeli-section">
+      <!-- Примеры товаров Andeli -->
+      <div class="product-card">
+        <img src="./andeli 9.PNG" alt="Andeli Product" />
+        <p>Model: ANDELI 500W </p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 3.PNG" alt="Andeli Product" />
+        <p>Model: ANDELI 30KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>500 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 23.PNG" alt="Andeli Product" />
+        <p>ANDELI 1500 W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 22.PNG" alt="Andeli Product" />
+        <p>ANDELI 300 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+
+      <div class="product-card">
+        <img src="./andeli 20.PNG" alt="Andeli Product" />
+        <p>ANDELI 20000W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+
+      <div class="product-card">
+        <img src="./andeli 2.PNG" alt="Andeli Product" />
+        <p>ANDELI SVC-D 5 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>125 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 19.PNG" alt="Andeli Product" />
+        <p>ANDELI 2000W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 18.PNG" alt="Andeli Product" />
+        <p>ANDELI 300W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 17.PNG" alt="Andeli Product" />
+        <p>ANDELI 6000W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 16.PNG" alt="Andeli Product" />
+        <p>ANDELI 3000W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 15.PNG" alt="Andeli Product" />
+        <p>ANDELI 150W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+        <span>0 USD</span>
+      </div>
+
+
+      <div class="product-card">
+        <img src="./andeli 14.PNG" alt="Andeli Product" />
+        <p>ANDELI 100W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 13.PNG" alt="Andeli Product" />
+        <p>ANDELI 500W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 12.PNG" alt="Andeli Product" />
+        <p>ANDELI 100W</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>0 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 11.PNG" alt="Andeli Product" />
+        <p>ANDELI 15 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>230 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli 1.PNG" alt="Andeli Product" />
+        <p>ANDELI SVC-D 10 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+        <span>200 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli  5.PNG" alt="Andeli Product" />
+        <p>ANDELI SDW-D1 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>45 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli  4.PNG" alt="Andeli Product" />
+        <p>ANDELI SVC-D 15 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+        <span>230 USD</span>
+      </div>
+      <div class="product-card">
+        <img src="./andeli  10.PNG" alt="Andeli Product" />
+        <p>ANDELI SDW-D 10 KVA</p>
+        <button class="favorite-btn" data-id="product_0">
+          <i class="fa fa-heart"></i>
+        </button>
+
+        <span>200 USD</span>
+      </div>
+
+    </section>
+
+
+    </section>
+    <div class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Manzil:</h2>
+          <p></p>
+
+          <h2>Telefon:</h2>
+          <p>+998 97 707 42 25</p>
+
+          <h2>Telegram:</h2>
+          <p>@Toshkent_0077</p>
+
+          <h2>Время роботы:</h2>
+          <p>Пн - Вс: 09:00 - 21:00</p>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://yandex.uz/map-widget/v1/?um=constructor%3A370151b964d8d06ff43e2e4e65a0a885e8a74935a8ab74f8c238c46cfd20e7bb&amp;source=constructor"
+            frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="faq-wrapper">
+      <div class="faq-left">
+
+        <h2>Часто задаваемые<br>вопросы</h2>
+      </div>
+      <div class="faq-right">
+        <div class="faq-item">
+          <button class="faq-question">Зачем нужный Стабилизаторы</button>
+          <div class="faq-answer">🛠️ Зачем нужны стабилизаторы напряжения?
+            Стабилизаторы напряжения — это устройства, которые защищают вашу технику от резких скачков, понижений и
+            нестабильного напряжения в электросети.
+
+            Когда напряжение "скачет", это может повредить дорогое оборудование: холодильники, телевизоры, кондиционеры,
+            станки, серверы и т. д. Стабилизатор следит за качеством напряжения и автоматически выравнивает его, подавая
+            на выход только безопасный ток.
+
+            ✅ Стабилизаторы нужны:
+
+            для защиты бытовой и промышленной техники;
+
+            в домах, где часто пропадает свет или напряжение нестабильно;
+
+            в офисах и на производствах, где работают чувствительные приборы;
+
+            в загородных домах, где питание идёт по старым линиям.
+
+            💡 Это надёжная инвестиция в безопасность вашего оборудования и спокойствие.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Есть гарантий на товары?</button>
+          <div class="faq-answer">Гарантия и условия обслуживания
+            Мы предоставляем сервисную гарантию сроком на 1 год на всю нашу продукцию. Если в течение этого времени
+            произойдёт поломка или возникнут технические неисправности, мы бесплатно отремонтируем или заменим товар.
+
+            Обратите внимание:
+            Если товар полностью исправен, но по каким-либо личным причинам не подошёл покупателю (например, "не
+            понравился", "не тот размер" и т.д.), возврат или обмен не производится.
+
+            Мы уверены в надёжности нашей продукции и всегда готовы прийти на помощь, если возникнут реальные
+            технические проблемы.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Есть ли доставка по Узбекистану?</button>
+          <div class="faq-answer">Да, мы доставляем товары по всему Узбекистану.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Как можно заказать?</button>
+          <div class="faq-answer">Как оформить заказ
+            На данный момент оформить заказ через сайт невозможно.
+            Чтобы приобрести товар, пожалуйста, свяжитесь с нами по телефону:
+
+            📞 +998 97 707 42 25
+            📞 +998 50 005 84 25
+
+            Наши менеджеры проконсультируют вас, помогут выбрать подходящую модель и оформят заказ по телефону. Мы
+            всегда на связи и готовы ответить на все ваши вопросы!
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <!-- Модальное окно -->
+  <div id="image-modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modal-img" />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const track = document.querySelector('.slider-track');
+      const slides = document.querySelectorAll('.slider-track img');
+      const totalSlides = slides.length;
+      let index = 0;
+
+      function showSlide(i) {
+        track.style.transform = `translateX(-${i * 100}%)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        showSlide(index);
+      }
+
+      setInterval(nextSlide, 3000); // Переход каждые 3 сек
+    });
+  </script>
+
+</body>
+
+</html>

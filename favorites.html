@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Избранное</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./logo.jpg" alt="Andeli Logo" class="logo" />
+    </div>
+    <div class="menu">
+      <ul class="katalog">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="appp.html">Контакты</a></li>
+        <li><a href="#stabil-section">Стабилизаторы</a></li>
+        <li><a href="favorites.html">Избранное</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h2 style="text-align:center; margin: 20px; color: white ;">Избранные товары</h2>
+    <section class="product-grid" id="favorites-container">
+      <!-- Сюда добавим избранные товары -->
+    </section>
+  </main>
+
+  <script>
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const allProducts = JSON.parse(localStorage.getItem("allProducts") || "[]");
+
+    const container = document.getElementById("favorites-container");
+    const matchedProducts = allProducts.filter(p => favorites.includes(p.id));
+
+    container.innerHTML = matchedProducts.map(product => `
+      <div class="product-card">
+        <img src="${product.img}" alt="${product.name}" />
+        <p>${product.name}</p>
+        <span>${product.price}</span>
+      </div>
+    `).join("");
+
+
+
+
+  </script>
+</body>
+
+</html>
